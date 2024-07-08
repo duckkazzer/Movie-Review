@@ -12,7 +12,7 @@ export default class ReviewsDao{
         }
         //else
         try{
-            reviews = await connect.db('reviews').collection("reviews")
+            reviews = await connect.db('reviews2').collection("reviews2")
         } catch(e){
             console.error(`Unable to establish collection dandles to userDAO: ${e}`)
         }
